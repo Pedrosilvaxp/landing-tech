@@ -1,0 +1,238 @@
+@charset "UTF-8";
+
+* {margin: 0px; padding: 0px;}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --cor-principal: #6267FF;
+    --cor-secundaria: #5a5959;
+    --fonte-principal: 'Open Sans';
+    --fonte-secundaria: Arial;
+}
+
+/* HEADER */
+header {
+    position: sticky;
+    font-family: var(--fonte-principal);
+    top: -0px;
+    opacity: 0.94;
+    background-color: white;
+    margin-bottom: 30px; 
+    padding-bottom: 6px;
+    box-shadow: 0px 0px 2px var(--cor-secundaria);
+}
+header ul {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    list-style-type: none;
+}
+.logo {
+    filter: drop-shadow(0px 1px 1px lightgrey);
+    width: 90px;
+    height: 90px;
+}
+.nav-link {
+    padding: 0px 4px;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+    color: var(--cor-secundaria);
+    transition-duration: .4s;
+}
+@media (max-width: 570px) {
+    a.social {display: none;}
+}
+.nav-link:hover {
+    color: var(--cor-principal);
+}
+i {
+    font-size: 32px;
+}
+.container-header {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* MAIN */
+main {
+    max-width: 1220px;
+    padding: 10px;
+    font-family: var(--fonte-secundaria);
+    margin: auto;
+}
+.inicial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+}
+.ini-introducao {
+    max-width: 500px;
+    min-width: 210px;
+}
+h1.titulo {
+    font-size: 50px;
+    font-family: var(--fonte-principal);
+    margin-bottom: 20px;
+}
+.inicial img {
+    border-radius: 30px;
+    object-fit: cover;
+    width: 600px;
+    height: 400px;
+}
+@media (max-width: 634px) {
+    .inicial img {
+        width: 400px;
+    }
+}
+@media (max-width: 400px) {
+    .inicial img {
+        width: 230px;
+        height: 220px;
+    }
+}
+
+/* Services area */
+section.servicos {margin-top: 11em;}
+.container {
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+.item {
+    text-align: center;
+    border-radius: 30px;
+    padding: 10px;
+    max-width: 340px;
+    min-width: 200px;
+}
+.item h1 {
+    font-size: 20px;
+    margin: 1.4em 0px;
+    color: var(--cor-secundaria);
+}
+.item img {
+    object-fit: cover;
+    max-width: 243px;
+    height: 260px;
+}
+
+/* Sobre area */
+article {
+    margin-top: 11em;
+    padding: 10px;
+}
+article.sobre p {
+    text-indent: 30px;
+}
+
+/* Depoimento area */
+aside.depoimento {
+    margin-top: 11em;
+}
+div.cliente {
+    text-align: center;
+    max-width: 300px;
+    padding: 20px;
+    box-shadow: 0px 0px 3px var(--cor-principal);
+    border-radius: 10px;
+}
+.foto-cliente {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+    border-bottom: 1px solid lightblue;
+    margin-bottom: 12px;
+}
+.foto-cliente i {
+    font-size: 20px;
+    color: #FFE121;
+}
+.avaliacao {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.cliente img {
+    width: 130px;
+    height: 126px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 14px;
+}
+
+/* Texts */
+h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 1.7em;
+}
+article p {
+    text-indent: 0px;
+}
+p {
+    line-height: 1.4em;
+}
+strong { 
+    color: var(--cor-principal);
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: var(--fonte-secundaria);
+    padding: 30px;
+    background-color: var(--cor-principal);
+    margin-top: 16em;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 22px;
+}
+footer h2 {
+    margin-bottom: 13px;
+    font-size: 16px;
+}
+input {
+    display: block;
+    margin: 0px auto 10px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    border: none;
+}
+input.sub {
+    background-color: var(--cor-principal);
+    border-radius: 10px;
+    padding: 16px 30px;
+    font-size: 13px;
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid white;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
