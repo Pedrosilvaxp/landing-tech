@@ -51,7 +51,7 @@ header ul {
 i {
     font-size: 32px;
 }
-.container-header {
+.container-nav {
     max-width: 1200px;
     margin: auto;
     display: flex;
