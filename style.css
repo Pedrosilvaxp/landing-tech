@@ -101,7 +101,8 @@ h1.titulo {
 }
 @media (max-width: 400px) {
     .inicial img {
-        width: 230px;
+        border-radius: 0px;
+        width: 280px;
         height: 220px;
     }
 }
